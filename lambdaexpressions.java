@@ -1,14 +1,14 @@
-interface Drawable{  
-    public void draw();  
+interface Number{  
+    public void num();  
 }  
-public class LambdaExpressionExample {  
+public class LambdaExpression{  
     public static void main(String[] args) {  
-        int width=10;  
+        int a=10;  
   
         //without lambda, Drawable implementation using anonymous class  
-        Drawable d=new Drawable(){  
-            public void draw(){System.out.println("Drawing "+width);}  
+        Number d=new Number(){  
+            public void draw(){System.out.println("Number "+a);}  
         };  
-        d.draw();  
+        a.num();  
     }  
 }  
